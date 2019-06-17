@@ -12,7 +12,8 @@ package main
  	fmt.Println("listening...")
  	err := http.ListenAndServe(GetPort(), nil)
  	if err != nil {
- 		log.Fatal("ListenAndServe: ", err)6 	}
+		 log.Fatal("ListenAndServe: ", err)
+	}
 }
  
  func handler(w http.ResponseWriter, r *http.Request) {
